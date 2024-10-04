@@ -1,7 +1,8 @@
 import React from "react";
+import { Appbar } from "../src/components/index";
 
 function App() {
-  return <div>App</div>;
+  return <Appbar />;
 }
 
 export default App;
