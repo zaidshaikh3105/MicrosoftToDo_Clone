@@ -7,10 +7,13 @@ export default {
     "./src/**/*.{js,ts,jsx,tsx}", // Vite's typical file structure
   ],
   theme: {
-    extend: {},
-  },
-  plugins: [daisyui],
-  daisyui: {
-    themes: [""], // Example for a custom theme
+    extend: {
+      fontFamily: {
+        body: ["Segoe UI", "sans-serif"],
+      },
+      colors: {
+        "text-color": "#333333",
+      },
+    },
   },
 };
