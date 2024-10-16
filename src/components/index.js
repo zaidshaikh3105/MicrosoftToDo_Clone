@@ -1,3 +1,4 @@
 import Appbar from "./Appbar";
+import DrawerComponent from "./DrawerComponent";
 
-export { Appbar };
+export { Appbar, DrawerComponent };
