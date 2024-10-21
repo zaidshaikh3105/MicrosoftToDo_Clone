@@ -10,19 +10,19 @@ import {
 import App from "./App.jsx";
 
 import MyDay from "./Pages/MyDay.jsx";
-import Important from "./Pages/Important.jsx";
-import Planned from "./Pages/Planned.jsx";
-import AssignedToMe from "./Pages/AssignedToMe.jsx";
-import Tasks from "./Pages/Tasks.jsx";
+import DoFirst from "./Pages/DoFirst.jsx";
+import Schedule from "./Pages/Schedule.jsx";
+import Delegate from "./Pages/Delegate.jsx";
+import DontDo from "./Pages/DontDo.jsx";
 
 const router = createBrowserRouter(
   createRoutesFromElements(
     <Route path="/" element={<App />}>
       <Route path="/" element={<MyDay />}></Route>
-      <Route path="/important" element={<Important />}></Route>
-      <Route path="/planned" element={<Planned />}></Route>
-      <Route path="/assigned_to_me" element={<AssignedToMe />}></Route>
-      <Route path="/tasks" element={<Tasks />}></Route>
+      <Route path="/do-First" element={<DoFirst />}></Route>
+      <Route path="/schedule" element={<Schedule />}></Route>
+      <Route path="/delegate" element={<Delegate />}></Route>
+      <Route path="/dontdo" element={<DontDo />}></Route>
     </Route>
   )
 );

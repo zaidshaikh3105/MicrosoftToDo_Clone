@@ -1,14 +1,14 @@
 import React from "react";
 import Typography from "@mui/material/Typography";
 
-function Important() {
+function Delegate() {
   return (
     <div>
-      <Typography variant="h3" color="primary">
-        Important
+      <Typography variant="h2" color="primary">
+        Delegate
       </Typography>
     </div>
   );
 }
 
-export default Important;
+export default Delegate;

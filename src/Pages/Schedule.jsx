@@ -1,14 +1,14 @@
 import React from "react";
 import Typography from "@mui/material/Typography";
 
-function Tasks() {
+function Schedule() {
   return (
     <div>
-      <Typography variant="h3" color="initial">
-        Tasks
+      <Typography variant="h2" color="primary">
+        Schedule
       </Typography>
     </div>
   );
 }
 
-export default Tasks;
+export default Schedule;
