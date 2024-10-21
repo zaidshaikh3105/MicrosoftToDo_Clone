@@ -1,14 +1,14 @@
 import React from "react";
 import Typography from "@mui/material/Typography";
 
-function AssignedToMe() {
+function DoFirst() {
   return (
     <div>
-      <Typography variant="h1" color="initial">
-        AssignedToMe
+      <Typography variant="h2" color="primary">
+        DoFirst
       </Typography>
     </div>
   );
 }
 
-export default AssignedToMe;
+export default DoFirst;

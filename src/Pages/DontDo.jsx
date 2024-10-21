@@ -1,14 +1,14 @@
 import React from "react";
 import Typography from "@mui/material/Typography";
 
-function Planned() {
+function DontDo() {
   return (
     <div>
-      <Typography variant="h3" color="primary">
-        Planned
+      <Typography variant="h2" color="primary">
+        Don’t Do
       </Typography>
     </div>
   );
 }
 
-export default Planned;
+export default DontDo;

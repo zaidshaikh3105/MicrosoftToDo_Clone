@@ -6,12 +6,13 @@ import Box from "@mui/material/Box";
 import CssBaseline from "@mui/material/CssBaseline";
 import Toolbar from "@mui/material/Toolbar";
 import { Outlet } from "react-router-dom";
-
+import { RxHamburgerMenu } from "react-icons/rx";
+import { IconButton } from "@mui/material";
 function App() {
   const [drawerOpen, setDrawerOpen] = useState(true);
 
   const handleDrawerClose = () => {
-    setDrawerOpen(true);
+    setDrawerOpen(false);
   };
 
   const handleDrawerOpen = () => {
@@ -53,22 +54,18 @@ function App() {
   return (
     <ThemeProvider theme={theme}>
       <CssBaseline />
+
       <Box sx={{ display: "flex" }}>
+        muipaper
         {/* Appbar */}
         <Appbar />
-
         {/* Drawer */}
-        <DrawerComponent
-          open={drawerOpen}
-          handleDrawerClose={handleDrawerClose}
-        />
-
-        {/* Main content area */}
+        <DrawerComponent />
         <Box
           component="main"
           sx={{
             flexGrow: 1,
-            p: 3,
+            p: 2,
             marginTop: "64px",
           }}
         >
