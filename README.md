@@ -1,7 +1,7 @@
 
-# **ToDo = This || That** 📝
+# **ToDo'Em** 📝
 
-**ToDo = This || That** is a productivity-focused web application that helps users organize and prioritize tasks using the **Eisenhower Matrix**. It provides an intuitive interface to manage tasks based on urgency and importance, allowing users to focus on what matters most.
+**ToDo'Em** is a productivity-focused web application that helps users organize and prioritize tasks using the **Eisenhower Matrix**. It provides an intuitive interface to manage tasks based on urgency and importance, allowing users to focus on what matters most.
 
 ## 🚀 **Features**
 - **Task Categorization**: Easily assign tasks to the four quadrants of the Eisenhower Matrix (Important/Urgent, Important/Not Urgent, Not Important/Urgent, Not Important/Not Urgent).
