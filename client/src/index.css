@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Segoe+UI:wght@400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 222.2 84% 4.9%;
+    --card: 0 0% 100%;
+    --card-foreground: 222.2 84% 4.9%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 222.2 84% 4.9%;
+    --primary: 221 70% 45%;
+    --primary-foreground: 210 40% 98%;
+    --secondary: 210 40% 96.1%;
+    --secondary-foreground: 222.2 47.4% 11.2%;
+    --muted: 210 40% 96.1%;
+    --muted-foreground: 215.4 16.3% 46.9%;
+    --accent: 210 40% 96.1%;
+    --accent-foreground: 222.2 47.4% 11.2%;
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 210 40% 98%;
+    --border: 214.3 31.8% 91.4%;
+    --input: 214.3 31.8% 91.4%;
+    --ring: 221 70% 45%;
+    --radius: 0.5rem;
+  }
+
+  * {
+    @apply border-border;
+  }
+
+  body {
+    font-family: 'Segoe UI', -apple-system, BlinkMacSystemFont, sans-serif;
+    @apply antialiased bg-background text-foreground;
+  }
+}
+
+/* Layout & Spacing */
+.page-container {
+  @apply max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8;
+}
+
+.section-container {
+  @apply bg-white rounded-lg shadow-sm border border-[#E1DFDD] p-6 mb-6;
+}
+
+.section-header {
+  @apply flex items-center justify-between mb-6;
+}
+
+.section-title {
+  @apply text-xl font-semibold text-gray-900;
+}
+
+.grid-container {
+  @apply grid gap-6 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4;
+}
+
+.flex-center {
+  @apply flex items-center justify-center;
+}
+
+.flex-between {
+  @apply flex items-center justify-between;
+}
+
+/* Cards & Components */
+.task-card {
+  @apply hover:shadow-md transition-all duration-200 p-4 rounded-lg border border-gray-100;
+}
+
+.task-card[data-completed="true"] {
+  @apply opacity-60;
+}
+
+.task-card[data-completed="true"] h3 {
+  @apply line-through;
+}
+
+.task-grid {
+  @apply grid gap-6 sm:grid-cols-2 lg:grid-cols-3;
+}
+
+.sidebar-link {
+  @apply rounded-md px-3 py-2 transition-colors duration-200 flex items-center hover:bg-muted;
+}
+
+.sidebar-link[data-active="true"] {
+  @apply bg-primary/10 text-primary;
+}
+
+.btn-primary {
+  @apply bg-[#2564CF] hover:bg-[#1E4DAE] text-white px-6 py-2.5 rounded-lg font-medium shadow-sm hover:shadow transition-all duration-200;
+}
+
+/* Headers & Text */
+.page-title {
+  @apply text-2xl font-bold mb-6;
+}
+
+.section-title {
+  @apply text-xl font-semibold mb-4;
+}
+
+/* Dashboard specific */
+.dashboard-grid {
+  @apply grid gap-6 p-6 md:grid-cols-2 lg:grid-cols-4;
+}
+
+.stats-card {
+  @apply bg-white p-6 rounded-xl shadow-sm hover:shadow-md transition-all duration-200;
+}
