@@ -1,0 +1,20 @@
+services:
+  - type: web
+    name: todo-app
+    env: node
+    buildCommand: npm install && npm run build
+    startCommand: NODE_ENV=production node dist/index.js
+    autoDeploy: true
+    envVars:
+      - key: PORT
+        value: 5000
+      - key: NODE_ENV
+        value: production
+    buildFilter:
+      paths:
+        - src/**/*.{js,jsx,ts,tsx}
+        - server/**/*.{js,ts}
+        - package.json
+        - package-lock.json
+        - vite.config.ts
+
