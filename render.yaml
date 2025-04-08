@@ -3,7 +3,7 @@ services:
     name: todo-app
     env: node
     buildCommand: npm install && npm run build
-    startCommand: NODE_ENV=production node dist/index.js
+    startCommand: npm run start
     autoDeploy: true
     envVars:
       - key: PORT
@@ -17,4 +17,10 @@ services:
         - package.json
         - package-lock.json
         - vite.config.ts
+    healthCheckPath: /
+    healthCheckTimeout: 5s
+    disk:
+      name: todo-app-data
+      mountPath: /data
+      sizeGB: 1
 
